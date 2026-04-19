@@ -20,26 +20,13 @@ Note: Frontend is the part that is AI-generated.
 - [Docker](https://docs.docker.com/get-docker/) installed on your machine.
 - [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
-### 2. Obtain Your Credentials
+### 2. Clone this repo and create the .env file
 
-#### **For Mastodon:**
-1. Log in to your Mastodon instance (e.g., [mastodon.social](https://mastodon.social)).
-2. Navigate to **Preferences > Development > New Application**.
-3. Give your app a name (e.g., "Prism") and ensure it has `write` permissions.
-4. Once saved, click on the application name to find your credentials:
-   - **Client Key** (This is your `MASTODON_CLIENT_ID`)
-   - **Client Secret**
-   - **Your Access Token**
+```
+git clone https://github.com/cmodi306/prism-app.git
+```
 
-#### **For Bluesky:**
-1. You will need your handle (e.g., `user.bsky.social`).
-2. It is highly recommended to use an **App Password** rather than your main password. Go to **Settings > App Passwords** on Bluesky to generate one.
-
----
-
-### 3. Setup the Environment
-
-Create a new folder on your host machine and create a file named `.env` inside it. Copy the following template and fill in your details:
+In the cloned folder on your host machine, create a file named `.env` inside it. Copy the following template and fill in your details:
 
 ```env
 # Mastodon Configuration
@@ -55,6 +42,29 @@ BLUESKY_PASSWORD=your-app-password-here
 # Application Port (Internal)
 PORT=9000
 ```
+
+Do not share this file anywhere as it will store the credentials of your social media accounts. The following part describes how to fetch the needed credentials from the respective platforms.
+
+### 2. Obtain Your Credentials
+
+#### **For Mastodon:**
+1. Log in to your Mastodon instance (e.g., [mastodon.social](https://mastodon.social)).
+2. Navigate to **Preferences > Development > New Application**.
+3. Give your app a name (e.g., "Prism") and ensure it has `write` permissions.
+4. Once saved, click on the application name to find your credentials:
+   - **Client Key** (This is your `MASTODON_CLIENT_ID`)
+   - **Client Secret**
+   - **Your Access Token**
+
+#### **For Bluesky:**
+1. You will need your handle (e.g., `user.bsky.social`).
+2. It is highly recommended to use an **App Password** rather than your main password. Go to **Settings > App Passwords** on Bluesky to generate one.
+
+
+Copy the credentials in the .env file in the appropriate variables.
+
+---
+
 
 ### 4. Starting up the App
 The compose.yaml file contains the docker configuration. By default, the app will be available on port 8000. You can change it as you will.
