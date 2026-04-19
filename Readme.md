@@ -35,7 +35,7 @@ In the cloned folder on your host machine, create a file named `.env` inside it.
 MASTODON_CLIENT_ID=your_client_id_here
 MASTODON_CLIENT_SECRET=your_client_secret_here
 MASTODON_ACCESS_TOKEN=your_access_token_here
-MASTODON_API_BASE_URL=[https://mastodon.social](https://mastodon.social)
+MASTODON_API_BASE_URL=https://mastodon.social
 
 # Bluesky Configuration
 BLUESKY_HANDLE=yourname.bsky.social
@@ -78,5 +78,5 @@ Now you app should be running on [http://localhost:8000](http://localhost:8000)
 ## 🤝 Contact & Support
 
 Questions? Feedback? Reach out on the platforms:
-Bluesky: [@cmodi306](@cmodi306.bsky.social)
-Mastodon: [@cmodi3006](@cmodi3006@mastodon.social)
+Bluesky: [@cmodi306](https://bsky.app/profile/cmodi306.bsky.social)
+Mastodon: [@cmodi3006](https://mastodon.social/@cmodi3006)
