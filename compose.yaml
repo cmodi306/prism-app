@@ -1,0 +1,10 @@
+services:
+  
+  web:
+    image: cmodi306/prism:latest
+    ports:
+      - "8000:8000"  # Map Host 9000 to Container 9000
+    environment:
+      - PORT=8000    # Tells the container to start Uvicorn on 9000
+    env_file: ".env"
+    restart: always
