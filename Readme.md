@@ -1,6 +1,6 @@
 # :globe_with_meridians: Prism: Parallel Social Posting
 
-![Prism App](./prism-app.png)
+![Prism App](./prism-app.gif)
 
 Prism is a lightweight, self-hosted web application designed to help you reclaim your time. It provides a single, unified interface to broadcast your thoughts across multiple decentralized social media platforms simultaneously. 
 
