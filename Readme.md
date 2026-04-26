@@ -42,7 +42,7 @@ BLUESKY_HANDLE=yourname.bsky.social
 BLUESKY_PASSWORD=your-app-password-here
 
 # Application Port (Internal)
-PORT=9000
+PORT=8000
 ```
 
 Do not share this file anywhere as it will store the credentials of your social media accounts. The following part describes how to fetch the needed credentials from the respective platforms.
